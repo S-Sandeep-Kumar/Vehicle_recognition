@@ -1,0 +1,44 @@
+{
+  "vehicles": [
+    {
+      "type": "SUV",
+      "description": "An SUV is a versatile passenger vehicle engineered to combine the towing capacity of a truck with the passenger space of a minivan. It features high ground clearance and all-wheel drive for off-road environments. These vehicles are popular among families because they provide superior safety, high visibility, and ample cargo space. Most modern SUVs use gasoline or hybrid engines to balance power with fuel efficiency for daily commuting and long trips."
+    },
+    {
+      "type": "bus",
+      "description": "A bus is a large-capacity transit vehicle specifically engineered for public transportation and high-volume urban mobility. It features a long-wheelbase chassis with multiple rows of seating and wide entryways to facilitate efficient passenger boarding. Designed for durability and constant operation, modern buses often utilize diesel, compressed natural gas, or electric powertrains to manage the heavy demands of scheduled city routes and commuter flow."
+    },
+    {
+      "type": "family sedan",
+      "description": "A family sedan is a traditional four-door passenger car optimized for fuel efficiency, safety, and a smooth ride during daily urban or suburban commuting. It typically features a three-box configuration with separate compartments for the engine, passengers, and cargo. These vehicles are favored for their balanced handling and aerodynamic profiles, providing a comfortable environment for small families while maintaining lower operating costs than larger utility vehicles."
+    },
+    {
+      "type": "fire engine",
+      "description": "A fire engine is a specialized emergency vehicle equipped with high-pressure pumps, large-capacity water tanks, and advanced firefighting apparatus for rapid incident response. It is built on a heavy-duty chassis to support the weight of ladders, hoses, and specialized rescue tools. These vehicles are engineered with powerful engines and emergency signaling systems to navigate traffic quickly, serving as a mobile command center for first responders at the scene of an emergency."
+    },
+    {
+      "type": "heavy truck",
+      "description": "A heavy truck is a powerful commercial vehicle designed for long-haul logistics and the transport of massive freight loads across interstate highways. Often referred to as a semi-truck or tractor-trailer, it utilizes a high-torque diesel engine and a multi-gear transmission to pull heavy trailers. These vehicles are the backbone of global supply chains, featuring reinforced frames and sleeper cabs to accommodate drivers during multi-day transport missions."
+    },
+    {
+      "type": "jeep",
+      "description": "A jeep is a rugged, compact 4x4 vehicle built for extreme terrain and off-road exploration. Characterized by its iconic open-body design, heavy-duty suspension system, and short wheelbase, it offers exceptional maneuverability in rocky or muddy environments. Originally developed for military use, modern versions retain a utilitarian aesthetic with removable doors and tops, appealing to outdoor enthusiasts who prioritize mechanical durability over highway luxury."
+    },
+    {
+      "type": "minibus",
+      "description": "A minibus is a multi-purpose passenger vehicle designed for small group shuttle services or large family transport, prioritizing interior volume and accessibility. It sits between a full-sized van and a bus in terms of capacity, often featuring sliding door access and configurable seating arrangements. These vehicles are commonly used for airport transfers, school transport, and community transit due to their ability to carry up to 15 passengers while remaining easy to park and maneuver."
+    },
+    {
+      "type": "racing car",
+      "description": "A racing car is a high-performance vehicle precision-engineered for maximum speed, downforce, and aerodynamic efficiency. Featuring a lightweight chassis made of carbon fiber or advanced alloys, it is powered by a high-RPM engine designed for peak output rather than longevity. These vehicles sacrifice comfort and cargo space for safety features like roll cages and specialized fuel cells, allowing drivers to compete at high velocities on closed circuits."
+    },
+    {
+      "type": "taxi",
+      "description": "A taxi is a standard commercial passenger vehicle equipped with a taximeter and distinct livery, optimized for short-duration urban hire and on-demand transit. These vehicles are typically chosen for their mechanical reliability and rear-seat legroom to ensure passenger comfort in dense city traffic. Modern taxi fleets often incorporate hybrid or electric technology to reduce idle emissions and operational costs during long shifts in metropolitan areas."
+    },
+    {
+      "type": "truck",
+      "description": "A truck is a light to medium-duty utility vehicle featuring an enclosed passenger cab and an open cargo bed for hauling tools, equipment, or materials. Popular for both professional trades and personal use, it offers a robust body-on-frame construction that provides high payload and towing capacities. Whether used on a construction site or for weekend chores, the pickup truck remains a staple of versatility due to its ability to transition between a passenger vehicle and a heavy-duty work tool."
+    }
+  ]
+}
