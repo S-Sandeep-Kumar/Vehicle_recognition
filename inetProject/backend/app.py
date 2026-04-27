@@ -314,21 +314,22 @@ if st.session_state.vehicle:
     """, unsafe_allow_html=True)
 
     st.markdown('<hr class="divider">', unsafe_allow_html=True)
-    st.markdown("#### 💬 Ask anything about this vehicle")
+    st.markdown(f"#### 💬 Chat with the {st.session_state.vehicle} Expert")
 
     for msg in st.session_state.chat_history:
-        role_class = "user-msg" if msg["role"] == "user" else "ai-msg"
-        prefix = "▶ You" if msg["role"] == "user" else "⚡ VehicleIQ"
-        st.markdown(f'<div class="chat-message {role_class}"><strong>{prefix}:</strong> {msg["content"]}</div>', unsafe_allow_html=True)
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
 
-    question = st.text_input("Ask a question...", placeholder="e.g. How much does this typically cost?", label_visibility="collapsed")
+    if prompt := st.chat_input(f"Ask anything about this {st.session_state.vehicle}..."):
+        st.session_state.chat_history.append({"role": "user", "content": prompt})
+        with st.chat_message("user"):
+            st.markdown(prompt)
 
-    if st.button("Ask VehicleIQ") and question.strip():
-        st.session_state.chat_history.append({"role": "user", "content": question})
-        with st.spinner("Thinking..."):
-            facts = VEHICLE_INFO.get(st.session_state.vehicle, "")
-            answer = ask_claude(st.session_state.vehicle, question, facts)
-        st.session_state.chat_history.append({"role": "assistant", "content": answer})
-        st.rerun()
+        with st.chat_message("assistant"):
+            with st.spinner("Thinking..."):
+                facts = VEHICLE_INFO.get(st.session_state.vehicle, "")
+                answer = ask_claude(st.session_state.vehicle, prompt, facts)
+            st.markdown(answer)
+            st.session_state.chat_history.append({"role": "assistant", "content": answer})
 
 st.markdown('<div class="footer-note">Built by SSandeepKumar · Powered by ResNet18 + Claude AI</div>', unsafe_allow_html=True)
